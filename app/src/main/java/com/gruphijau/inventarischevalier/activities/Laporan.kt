@@ -33,4 +33,9 @@ class Laporan : BaseActivity() {
             finish()
         }
     }
+    override fun onBackPressed() {
+        val prevPage = Intent(this, Dashboard::class.java)
+        startActivity(prevPage)
+        finish()
+    }
 }
