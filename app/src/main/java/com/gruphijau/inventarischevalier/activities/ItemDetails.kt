@@ -24,7 +24,7 @@ class ItemDetails : BaseActivity() {
             startActivity(prevPage)
             finish()
         }
-        binding.pinjamBtn.setOnClickListener {
+        binding.editBtn.setOnClickListener {
             if (itemStatus == "Baik") {
                 val intent = Intent(this, BorrowSuccess::class.java)
                 startActivity(intent)
@@ -35,12 +35,12 @@ class ItemDetails : BaseActivity() {
                 finish()
             }
         }
-        binding.plusBtn.setOnClickListener {
-            binding.itemQuantity.text = addQuantity().toString()
-        }
-        binding.minusBtn.setOnClickListener {
-            binding.itemQuantity.text = decreaseQuantity().toString()
-        }
+//        binding.plusBtn.setOnClickListener {
+//            binding.itemQuantity.text = addQuantity().toString()
+//        }
+//        binding.minusBtn.setOnClickListener {
+//            binding.itemQuantity.text = decreaseQuantity().toString()
+//        }
     }
     override fun onBackPressed() {
         val prevPage = Intent(this, ItemList::class.java)

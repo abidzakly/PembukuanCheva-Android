@@ -36,14 +36,17 @@ class Dashboard : BaseActivity() {
 
         listBarang = ArrayList()
         listLaporan = ArrayList()
+
         listBarang.add(DashboardData(1, "Daftar Barang"))
-        listBarang.add(DashboardData(2, "Pengembalian"))
+        listBarang.add(DashboardData(2, "Tambah Barang"))
 
 
         listLaporan.add(DashboardData(1, "Peminjaman"))
         listLaporan.add(DashboardData(2, "Data Pengguna"))
         listLaporan.add(DashboardData(3, "Laporan"))
         listLaporan.add(DashboardData(4, "Barang Masuk"))
+        listLaporan.add(DashboardData(5, "Supplier"))
+
 
         adapterBarang = DashboardAdapter(listBarang, this)
         binding.rvBarang.adapter = adapterBarang
@@ -54,7 +57,7 @@ class Dashboard : BaseActivity() {
         binding.rvLaporan.layoutManager = LinearLayoutManager(this)
 
         binding.iconUser.setOnClickListener {
-            val nextPage = Intent(this, Settings::class.java)
+            val nextPage = Intent(this, EditProfile::class.java)
             intent.putExtra("username", username)
             startActivity(nextPage)
         }

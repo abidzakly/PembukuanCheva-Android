@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cheva_kuning">
+    android:background="@color/white">
 
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="0dp"
         android:layout_height="109dp"
-        android:background="@drawable/bg_header_white"
+        android:background="@color/white"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,7 +75,7 @@
                 android:layout_marginStart="29dp"
                 android:layout_marginTop="29dp"
                 android:fontFamily="@font/poppins_bold"
-                android:textColor="@color/cheva_container"
+                android:textColor="@color/black"
                 android:textSize="32sp"
                 tools:layout_marginBottom="20dp" />
 
@@ -219,27 +219,6 @@
                     tools:itemCount="0"
                     tools:listitem="@layout/rv_home_dropdown" />
             </LinearLayout>
-
-            <TextView
-                android:id="@+id/pemberitahuan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="29dp"
-                android:layout_marginTop="54dp"
-                android:layout_marginBottom="20dp"
-                android:fontFamily="@font/poppins_semi_bold"
-                android:text="@string/pemberitahuan"
-                android:textColor="@color/cheva_container"
-                android:textSize="18sp" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvNotif"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:itemCount="1"
-                tools:listitem="@layout/rv_pemberitahuan" />
-
-
         </LinearLayout>
     </ScrollView>
 
