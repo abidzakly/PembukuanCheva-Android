@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="26dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:background="@drawable/item_container"
+        android:elevation="10dp"
+        android:translationZ="8dp">
+
+        <ImageView
+            android:id="@+id/images"
+            android:layout_width="120dp"
+            android:layout_height="93dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.533" />
+
+        <TextView
+            android:id="@+id/txt_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            app:layout_constraintStart_toEndOf="@+id/images"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/txt_ket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:alpha="0.65"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#222120"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/images"
+            app:layout_constraintTop_toBottomOf="@+id/txt_barang"></TextView>
+
+        <TextView
+            android:id="@+id/txt_tanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:alpha="0.65"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#222120"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/images"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ket"
+            tools:ignore="InvalidId"></TextView>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:alpha="0.65"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="Oleh  "
+            android:textColor="#222120"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/images"
+            app:layout_constraintTop_toBottomOf="@+id/txt_tanggal"
+            tools:ignore="InvalidId"></TextView>
+
+        <TextView
+            android:id="@+id/txt_oleh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.65"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="#222120"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/txt_tanggal"
+            tools:ignore="InvalidId"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

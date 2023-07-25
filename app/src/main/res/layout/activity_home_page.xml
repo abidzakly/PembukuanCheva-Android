@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/boxHeader"
+        android:layout_width="411dp"
+        android:layout_height="125dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_header_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+        <TextView
+            android:id="@+id/tvChevaHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="70dp"
+            android:text="@string/chevalier_lab"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            />
+
+    <ImageView
+        android:id="@+id/ivSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cog"
+         />
+    
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/boxMenu1"
+        android:layout_width="93dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="27dp"
+        android:orientation="vertical"
+        android:background="@drawable/rectangle_button_template"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/boxHeader"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/boxMenu2"
+        android:layout_width="93dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:background="@drawable/rectangle_button_template"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/boxHeader"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/boxMenu3"
+        android:layout_width="93dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="27dp"
+        android:orientation="vertical"
+        android:background="@drawable/rectangle_button_template"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/boxHeader"/>
+
+    <TextView
+        android:id="@+id/tvDashBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dashboard"
+        android:textSize="17dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/boxHeader"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

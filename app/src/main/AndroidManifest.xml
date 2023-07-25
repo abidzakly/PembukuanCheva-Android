@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.InventarisChevalier"
+        android:supportsRtl="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".activities.BarangMasuk"/>
+        <activity android:name=".activities.BorrowFailed"/>
+        <activity android:name=".activities.BorrowSuccess"/>
+        <activity android:name=".activities.ChangePassword"/>
+        <activity android:name=".activities.Dashboard"/>
+        <activity android:name=".activities.EditProfile"/>
+        <activity android:name=".activities.ItemDetails"/>
+        <activity android:name=".activities.ItemList"/>
+        <activity android:name=".activities.KodeOTP"/>
+        <activity android:name=".activities.Laporan"/>
+        <activity android:name=".activities.LupaSandiCari"/>
+        <activity android:name=".activities.MainActivity"/>
+        <activity android:name=".activities.Peminjaman"/>
+        <activity android:name=".activities.Registration"/>
+        <activity android:name=".activities.RiwayatBarang"/>
+        <activity android:name=".activities.Settings"/>
+        <activity android:name=".activities.SplashLogo"/>
+        <activity android:name=".activities.UserData"/>
+        <activity android:name=".activities.Pengembalian"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

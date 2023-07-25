@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:id="@+id/linearLayoutCompat"
+       android:layout_width="match_parent"
+       android:layout_height="105dp"
+       android:background="@drawable/header"
+       android:orientation="horizontal"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+      <ImageButton
+          android:id="@+id/backBtn"
+          android:layout_width="75dp"
+          android:layout_height="75dp"
+         android:src="@drawable/backbtn"
+         android:layout_marginStart="10dp"
+         android:layout_marginTop="21dp"
+          android:background="@android:color/transparent"/>
+
+      <TextView
+          android:id="@+id/textBarang"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="43dp"
+          android:fontFamily="@font/poppins_bold"
+          android:text="@string/barang"
+          android:textColor="@color/white"
+          android:textSize="20sp" />
+
+   </androidx.appcompat.widget.LinearLayoutCompat>
+
+   <TextView
+       android:id="@+id/textUrutPerminggu"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/linearLayoutCompat"
+       android:layout_alignParentEnd="true"
+       android:layout_marginTop="33dp"
+       android:layout_marginEnd="31dp"
+       android:text="Urut Perminggu"
+       android:textColor="@color/black"/>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/rv"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/textUrutPerminggu"
+       android:layout_marginTop="19dp"
+      android:orientation="horizontal"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentEnd="true"
+       tools:listitem="@layout/rv_items"
+       tools:spanCount="2"
+       tools:layoutManager="GridLayoutManager" />
+
+</RelativeLayout>

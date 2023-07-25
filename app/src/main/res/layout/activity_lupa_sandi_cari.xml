@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvLupa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="158dp"
+        android:text="@string/lupa"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="20sp"
+        android:textColor="@color/cheva_kuning"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvKataSandi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:text="@string/kata_sandi"
+        android:textColor="@color/cheva_kuning"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tvLupa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/tvBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/back"
+        android:textSize="40sp"
+        android:textColor="@color/cheva_kuning"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/btnKirim"
+        android:layout_width="300dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="70dp"
+        android:text="@string/kirim"
+        android:textSize="20sp"
+        android:background="@drawable/orangecheva"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/edtEmailOrPhoneNumber"
+        android:layout_width="280dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:background="@drawable/stroke_template"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/btnKirim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvEmailorPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="@string/email_nomor_telepon"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="15dp"
+        android:textColor="@color/cheva_kuning"
+        app:layout_constraintBottom_toTopOf="@id/edtEmailOrPhoneNumber"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvKalimatBaris1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/jangan_khawatir_itu_terjadi_harap"
+        app:layout_constraintBottom_toTopOf="@id/tvKalimatBaris2"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvKalimatBaris2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/masukkan_email_nomor_telepon_yang"
+        app:layout_constraintBottom_toTopOf="@id/tvKalimatBaris3"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/tvKalimatBaris3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="90dp"
+        android:text="@string/terkait_dengan_akun_anda"
+        android:fontFamily="@font/poppins_regular"
+        app:layout_constraintBottom_toTopOf="@id/tvEmailorPassword"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ivLupaKataSandi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/waduh"
+        app:layout_constraintTop_toBottomOf="@id/tvKataSandi"
+        app:layout_constraintBottom_toTopOf="@id/tvKalimatBaris1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

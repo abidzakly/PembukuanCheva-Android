@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvMasukkanUTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/masukkan_otp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="25dp"
+        android:textColor="@color/cheva_kuning"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/tvIconBackFromOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/back"
+        android:textSize="40dp"
+        android:textColor="@color/cheva_kuning"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnKirim"
+        android:layout_width="300dp"
+        android:layout_height="58dp"
+        android:background="@drawable/orangecheva"
+        android:layout_marginBottom="110dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="20dp"
+        android:text="@string/kirim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/edtKode"
+        android:layout_width="280dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:background="@drawable/stroke_template"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@id/btnKirim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvKode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/cheva_kuning"
+        android:text="@string/kode"
+        app:layout_constraintBottom_toTopOf="@id/edtKode"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvKalimatKe2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="60dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/dikirimkan_6282123346678"
+        app:layout_constraintBottom_toTopOf="@id/tvKode"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvKalimatKe1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/masukkan_4_digit_kode_yang_telah"
+        android:textSize="15dp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginStart="70dp"
+        app:layout_constraintBottom_toTopOf="@id/tvKalimatKe2"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ivMasukkanOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/utpillust"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvMasukkanUTP"
+        app:layout_constraintBottom_toBottomOf="@id/tvKalimatKe1"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

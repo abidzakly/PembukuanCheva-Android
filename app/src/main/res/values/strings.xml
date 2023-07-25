@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Inventaris Chevalier</string>
+    <string name="barang">Barang</string>
+    <string name="textview">TextView</string>
+    <string name="tv_lg">TV LG</string>
+    <string name="detail">Detail</string>
+    <string name="pemberitahuan">Pemberitahuan</string>
+    <string name="laporan">Laporan</string>
+    <string name="data_pengguna">Data Pengguna</string>
+    <string name="peminjaman">Peminjaman</string>
+    <string name="barang_keluar">Barang Keluar</string>
+    <string name="barang_masuk">Barang Masuk</string>
+    <string name="supplier">Supplier</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="chevalier_lab">Chevalier Lab</string>
+        <string name="sandika">Sandika</string>
+        <string name="sandika_gmail_com">sandika@gmail.com</string>
+        <string name="setting_button">setting_button</string>
+        <string name="image_barang">image_barang</string>
+        <string name="notif_content_null">Tidak ada pemberitahuan terbaru</string>
+        <string name="button_back"><![CDATA[<]]></string>
+        <string name="setting">Pengaturan</string>
+        <string name="user_name">Sandika</string>
+        <string name="email_user">sandika@gmail.com</string>
+        <string name="riwayat">Riwayat</string>
+        <string name="edit_profil">Edit Profil</string>
+        <string name="keluar">Keluar</string>
+        <string name="edit_profil_header">Edit Profil</string>
+        <string name="user_fullname">Sandika</string>
+        <string name="fullname_title">Nama Lengkap</string>
+        <string name="email_title">Email</string>
+        <string name="email_placeholder">sandika@gmail.com</string>
+        <string name="nomor_telepon_title">Nomor Telepon</string>
+        <string name="no_telepon">08xxxxxxx</string>
+        <string name="riwayat_header">Riwayat</string>
+        <string name="riwayat_pinjam">Peminjaman XBOX</string>
+        <string name="desc_peminjaman">Meminjam XBOX pada tanggal 5 Mei 2023</string>
+        <string name="welcome_text">Hi, User</string>
+        <string name="dropdown_barang">dropdown_barang</string>
+        <string name="droppdown_laporan">droppdown_laporan</string>
+        <string name="daftar_barang">Daftar Barang</string>
+        <string name="login">Login</string>
+        <string name="username">E-mail</string>
+        <string name="password">Password</string>
+        <string name="lupa_kata_sandi">Lupa Kata Sandi?</string>
+        <string name="buat_akun">Buat Akun</string>
+        <string name="tidak_punya_akun">Tidak Punya Akun?</string>
+
+        <!-- Registration -->
+        <string name="back"><![CDATA[<]]></string>
+        <string name="buat">Buat</string>
+        <string name="verifikasi_kata_sandi">Verifikasi Kata Sandi</string>
+        <string name="kata_sandi">Kata Sandi</string>
+        <string name="email">Email</string>
+
+        <!-- Forget Password -->
+        <string name="jangan_khawatir_itu_terjadi_harap">Jangan khawatir itu terjadi! Harap</string>
+        <string name="lupa">Lupa</string>
+        <string name="kirim">Kirim</string>
+        <string name="email_nomor_telepon">Email/Nomor Telepon</string>
+        <string name="masukkan_email_nomor_telepon_yang">masukkan email / Nomor telepon yang</string>
+        <string name="terkait_dengan_akun_anda">terkait dengan akun Anda.</string>
+
+        <!-- OTP Page -->
+        <string name="masukkan_otp">Masukkan OTP</string>
+        <string name="kode">Kode</string>
+        <string name="dikirimkan_6282123346678">dikirimkan +6282123346678</string>
+        <string name="masukkan_4_digit_kode_yang_telah">Masukkan 4 digit kode yang telah</string>
+
+        <!-- Change PW -->
+        <string name="ubah_kata_sandi">Ubah Kata Sandi</string>
+        <string name="verif_kata_sandi_baru">Verif Kata Sandi Baru</string>
+        <string name="kata_sandi_baru">Kata Sandi Baru</string>
+    </resources>

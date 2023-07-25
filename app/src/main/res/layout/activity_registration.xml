@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvBuatAkunRegistrasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/buat_akun"
+        android:textColor="#F7A400"
+        android:textSize="29sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/tvIconBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/back"
+        android:textSize="40dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="#F7A400"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnBuatAkun"
+        android:layout_width="300dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="80dp"
+        android:text="@string/buat"
+        android:textSize="22dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textAllCaps="false"
+        android:background="@drawable/orangecheva"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/edtVerifikasiPassword"
+        android:layout_width="280dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@drawable/stroke_template"
+        app:layout_constraintBottom_toTopOf="@id/btnBuatAkun"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvVerifikasiPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verifikasi_kata_sandi"
+        android:layout_marginStart="75dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/cheva_kuning"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edtVerifikasiPassword"/>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="280dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/stroke_template"
+        app:layout_constraintBottom_toTopOf="@id/tvVerifikasiPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="@string/kata_sandi"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="15dp"
+        android:textColor="@color/cheva_kuning"
+        app:layout_constraintBottom_toTopOf="@id/edtPassword"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="280dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/stroke_template"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@id/tvPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="@string/email"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="15dp"
+        android:textColor="@color/cheva_kuning"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edtEmail"/>
+
+    <ImageView
+        android:id="@+id/ivRegistrasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/registration"
+        app:layout_constraintTop_toBottomOf="@id/tvBuatAkunRegistrasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvEmail"/>
+
+    <ImageView
+        android:id="@+id/ivKataSandi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="225dp"
+        app:srcCompat="@drawable/toggle_pw"
+        app:layout_constraintBottom_toBottomOf="@id/edtPassword"
+        app:layout_constraintTop_toTopOf="@id/edtPassword"
+        app:layout_constraintStart_toStartOf="@id/edtPassword"
+        app:layout_constraintEnd_toEndOf="@id/edtPassword"/>
+
+    <ImageView
+        android:id="@+id/ivVerifikasiKataSandi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="225dp"
+        app:srcCompat="@drawable/toggle_pw"
+        app:layout_constraintBottom_toBottomOf="@id/edtVerifikasiPassword"
+        app:layout_constraintTop_toTopOf="@id/edtVerifikasiPassword"
+        app:layout_constraintStart_toStartOf="@id/edtVerifikasiPassword"
+        app:layout_constraintEnd_toEndOf="@id/edtVerifikasiPassword"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
