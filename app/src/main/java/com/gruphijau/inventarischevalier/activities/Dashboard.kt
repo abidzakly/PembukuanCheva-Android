@@ -6,7 +6,9 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.gruphijau.inventarischevalier.adapters.DashboardAdapter
 import com.gruphijau.inventarischevalier.R
+import com.gruphijau.inventarischevalier.adapters.NotifAdapter
 import com.gruphijau.inventarischevalier.data.DashboardData
+import com.gruphijau.inventarischevalier.data.NotifData
 import com.gruphijau.inventarischevalier.databinding.ActivityDashboardBinding
 
 class Dashboard : BaseActivity() {
@@ -15,8 +17,10 @@ class Dashboard : BaseActivity() {
     private var alert: AlertDialog? = null
     private lateinit var adapterBarang: DashboardAdapter
     private lateinit var adapterLaporan: DashboardAdapter
+    private lateinit var adapterNotif: NotifAdapter
     private lateinit var listBarang: ArrayList<DashboardData>
     private lateinit var listLaporan: ArrayList<DashboardData>
+    private lateinit var listNotif: ArrayList<NotifData>
     private lateinit var binding: ActivityDashboardBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,9 +37,12 @@ class Dashboard : BaseActivity() {
 
         binding.rvBarang.setHasFixedSize(true)
         binding.rvLaporan.setHasFixedSize(true)
+        binding.rvNotif.setHasFixedSize(true)
 
         listBarang = ArrayList()
         listLaporan = ArrayList()
+        listNotif = ArrayList()
+
         listBarang.add(DashboardData(1, "Daftar Barang"))
         listBarang.add(DashboardData(2, "Pengembalian"))
 
@@ -45,6 +52,8 @@ class Dashboard : BaseActivity() {
         listLaporan.add(DashboardData(3, "Laporan"))
         listLaporan.add(DashboardData(4, "Barang Masuk"))
 
+        listNotif.add(NotifData(1, "Tidak ada pemberitahuan"))
+
         adapterBarang = DashboardAdapter(listBarang, this)
         binding.rvBarang.adapter = adapterBarang
         binding.rvBarang.layoutManager = LinearLayoutManager(this)
@@ -52,6 +61,10 @@ class Dashboard : BaseActivity() {
         adapterLaporan = DashboardAdapter(listLaporan, this)
         binding.rvLaporan.adapter = adapterLaporan
         binding.rvLaporan.layoutManager = LinearLayoutManager(this)
+
+        adapterNotif = NotifAdapter(listNotif)
+        binding.rvNotif.adapter = adapterNotif
+        binding.rvNotif.layoutManager = LinearLayoutManager(this)
 
         binding.iconUser.setOnClickListener {
             val nextPage = Intent(this, Settings::class.java)
