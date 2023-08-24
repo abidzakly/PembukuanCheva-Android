@@ -8,6 +8,16 @@ import com.gruphijau.inventarischevalier.databinding.RvItemBarangBinding
 
 class BarangAdapter(private val list: ArrayList<BarangData>) : RecyclerView.Adapter<BarangAdapter.ViewHolder>() {
 
+    private lateinit var mListener: onItemClickListener
+
+    interface onItemClickListener {
+        fun onItemClick(position: Int)
+    }
+
+    fun setOnClickListener(listener: onItemClickListener) {
+        mListener = listener
+    }
+
     inner class ViewHolder(val binding: RvItemBarangBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -16,11 +26,15 @@ class BarangAdapter(private val list: ArrayList<BarangData>) : RecyclerView.Adap
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentItem = list[position]
-        holder.binding.images.setImageResource(currentItem.imgBrg)
+        holder.binding.images.setImageResource(currentItem.imgBarang)
         holder.binding.txtBarang.text = currentItem.namaBarang
-        holder.binding.txtKet.text = currentItem.ket
+        holder.binding.txtJumlah.text = currentItem.jumlah
+        holder.binding.txtNamaunit.text = currentItem.namaBarang
         holder.binding.txtTanggal.text = currentItem.tanggal
-        holder.binding.txtOleh.text = currentItem.oleh
+
+        holder.itemView.setOnClickListener {
+            mListener.onItemClick(position)
+        }
     }
 
     override fun getItemCount(): Int {

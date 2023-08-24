@@ -46,7 +46,13 @@ class DashboardAdapter(private val dropdownList:ArrayList<DashboardData>, privat
                     itemView.context.startActivity(nextPage)
                     activity.finish()
                 } else if (itemName == "Barang Masuk") {
-                    alertCreate()
+                    val nextPage = Intent(itemView.context, BarangMasuk::class.java)
+                    itemView.context.startActivity(nextPage)
+                    activity.finish()
+                } else if (itemName == "Supplier") {
+                    val nextPage = Intent(itemView.context, SupplierFragment::class.java)
+                    itemView.context.startActivity(nextPage)
+                    activity.finish()
                 } else {
                     alertCreate()
                 }

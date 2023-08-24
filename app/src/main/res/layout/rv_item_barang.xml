@@ -9,9 +9,9 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="108dp"
-        android:background="@drawable/item_container"
         android:elevation="10dp"
-        android:translationZ="8dp">
+        android:translationZ="8dp"
+        android:background="@color/white">
 
         <ImageView
             android:id="@+id/images"
@@ -21,7 +21,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.533" />
+            app:layout_constraintVertical_bias="0.533"></ImageView>
 
         <TextView
             android:id="@+id/txt_barang"
@@ -30,6 +30,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
             android:fontFamily="@font/poppins_bold"
+            android:text="Barang"
             android:textColor="@color/black"
             android:textSize="14dp"
             app:layout_constraintStart_toEndOf="@+id/images"
@@ -39,9 +40,34 @@
             android:id="@+id/txt_ket"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:alpha="0.65"
+            android:fontFamily="@font/inter_regular"
+            android:text=" unit "
+            android:textColor="#222120"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/txt_jumlah"
+            app:layout_constraintTop_toBottomOf="@+id/txt_barang"></TextView>
+
+        <TextView
+            android:id="@+id/txt_namaunit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.65"
+            android:fontFamily="@font/inter_regular"
+            android:text="namabarang"
+            android:textColor="#222120"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@+id/txt_ket"
+            app:layout_constraintTop_toBottomOf="@+id/txt_barang"></TextView>
+
+        <TextView
+            android:id="@+id/txt_jumlah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:alpha="0.65"
-            android:fontFamily="@font/poppins_regular"
+            android:fontFamily="@font/inter_regular"
+            android:text="Unit"
             android:textColor="#222120"
             android:textSize="12dp"
             app:layout_constraintStart_toEndOf="@+id/images"
@@ -53,38 +79,14 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:alpha="0.65"
-            android:fontFamily="@font/poppins_regular"
+            android:fontFamily="@font/inter_regular"
+            android:text="Tanggal"
             android:textColor="#222120"
             android:textSize="12dp"
             app:layout_constraintStart_toEndOf="@+id/images"
             app:layout_constraintTop_toBottomOf="@+id/txt_ket"
             tools:ignore="InvalidId"></TextView>
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:alpha="0.65"
-            android:fontFamily="@font/poppins_semi_bold"
-            android:text="Oleh  "
-            android:textColor="#222120"
-            android:textSize="12dp"
-            app:layout_constraintStart_toEndOf="@+id/images"
-            app:layout_constraintTop_toBottomOf="@+id/txt_tanggal"
-            tools:ignore="InvalidId"></TextView>
-
-        <TextView
-            android:id="@+id/txt_oleh"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:alpha="0.65"
-            android:fontFamily="@font/poppins_semi_bold"
-            android:textColor="#222120"
-            android:textSize="12dp"
-            app:layout_constraintStart_toEndOf="@+id/textView9"
-            app:layout_constraintTop_toBottomOf="@+id/txt_tanggal"
-            tools:ignore="InvalidId"></TextView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.google.android.material.card.MaterialCardView>
